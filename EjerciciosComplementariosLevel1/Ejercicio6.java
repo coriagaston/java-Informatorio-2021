@@ -10,19 +10,21 @@ public class Ejercicio6 {
 
         System.out.println("Introduzca el numero que desea saber: ");
 
-        int numero = scan.nextInt();
-
         int numero2 = scan.nextInt();
 
-        int potencia = 0;
+        System.out.println("Elevado a: ");
 
-        for(int i=0;i!=numero;i++){
+        int numero = scan.nextInt();
 
-            potencia = numero*(numero2);
+        int potencia = 1;
+
+        for(int i=1;i<=numero;i++){
+
+            potencia = potencia * numero2;
 
         }
 
-        System.out.println("La potencia es: "+potencia);
+        System.out.println("El resultado es "+ potencia);
 
         scan.close();
     }
